@@ -1,4 +1,4 @@
 /boot/
-/EFI/
 /syslinux/
+*.img
 *.iso
