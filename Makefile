@@ -10,7 +10,7 @@ boot/linux:
 	@mkdir -p boot
 	wget -N \
 	   -O "$(@)" \
-	   http://ftp.debian.org/debian/dists/bullseye/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux \
+	   http://ftp.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux \
 	   || { rm -f "$(@)"; exit 1; }
 	@touch "$(@)"
 
@@ -20,7 +20,7 @@ boot/initrd.gz:
 	@mkdir -p boot
 	wget -N \
 	   -O "$(@)" \
-	   http://ftp.debian.org/debian/dists/bullseye/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz \
+	   http://ftp.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz \
 	   || { rm -f "$(@)"; exit 1; }
 	@touch "$(@)"
 
